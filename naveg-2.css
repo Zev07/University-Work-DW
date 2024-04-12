@@ -1,0 +1,26 @@
+body#corpo{
+    background-color: gray;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+
+/* .navbar-expand-lg.bg-body-tertiary.bg-dark {
+    background-color: transparent !important;
+} */
+
+.navbar-brand{
+    color: white ;
+    font-size: 35px !important;
+}
+.navbar-nav {
+    margin: 0 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+}
+
