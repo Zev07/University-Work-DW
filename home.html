@@ -14,6 +14,8 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>    
 
     <title>Document</title>
@@ -22,12 +24,12 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
             <div class="container-fluid">
-              <img src="/imagens/red-bull.WEBP" alt="Logotipo da Red Bull" height="80">
+              <img class="nav-logo"src="./css/assents/img/logo.png" alt="Logotipo da Red Bull" height="80">
               
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"> Home</a>
+                    <a class="nav-link" aria-current="page" href="#"> Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#"> Sobre</a>
@@ -47,7 +49,118 @@
             </div>
           </nav>    
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+
+      <div class="top-bg-video">
+        <video autoplay muted loop>
+        <source src="./css/assents/videos/homevideo.mp4" type="video/mp4">
+        </video>
+        <h1>Sua Jornada Começa Aqui</h1>
+      </div>
+
+      <div class="home-txt-primary">
+        <div class="hm-item-txt-1">
+          <p id="text-hm">RedBull</p>
+          <h1>Dá Asas a Pessoas e Ideias desde 1987.</h1>
+          <p>Nos anos 80, Dietrich Mateschitz desenvolveu a fórmula conhecida como Red Bull Energy Drink. Este não foi apenas o lançamento de um produto completamente novo, na verdade, foi o nascimento de uma categoria totalmente nova de produto.</p>
+        </div>
+        <div class="hm-item-txt-2">
+          <img src="./css/assents/img/VoandoBred.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+
+      <div class="home-txt-second">
+        <div class="hm-s-item-txt-1">
+          <p id="hm-s-text">O Que Nos Motiva</p>
+          <i class="bi bi-quote"></i>
+          <h1 id="hm-s-text-title">Na busca do nosso potencial</h1>
+          <p>Desde os primórdios da Red Bull, uma mentalidade empreendedora sempre orientou a nossa abordagem do trabalho e do ambiente que criamos:</p>
+        </div>
+      </div>
+      <div class="home-cards">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">MEANING</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Encontra o teu objetivo e usa os teus pontos fortes para alcançá-lo!</h6>
+            <p class="card-text">A maior razão pela qual trabalhar. Contribuir e acrescentar valor a algo ou alguém.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">FREEDOM & RESPONSIBILITY</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Assume a verdadeira responsabilidade por ti e pelo teu trabalho.</h6>
+            <p class="card-text">Assume a verdadeira responsabilidade por ti e pelo teu trabalho.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">MASTERY</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Ama a vida, ama  o trabalho, ama desarfiar-te!</h6>
+            <p class="card-text">Ama a vida, ama  o trabalho, ama desarfiar-te!</p>
+          </div>
+        </div>
+      </div>
+        
+      <div class="parallax-primary"></div>
+      
+      <div class="home-txt-trird">
+        <div class="hm-text-trird-item">
+           <img src="./css/assents/img/RedbullAna.png" class="img-fluid-2" alt="..."> 
+          </div>
+      </div>
+
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">(F.A.Q) Perguntas Frequentes </h2>
+    
+        <div class="accordion" id="faqAccordion">
+           <div class="card">
+             <div class="card-header" id="headingOne">
+               <h2 class="mb-0">
+               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    O que a Red Bull faz como empresa?
+                </button>
+                </h2>
+             </div>
+      
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Consideramos nossos clientes desde as pessoas que apreciam nossos produtos e produções até parceiros de mídia e associados de negócios. Em todos os casos, nossa missão é dar asas às pessoas e ideias. Saiba mais aqui: <a href="https://www.redbull.com/br-pt/energydrink/empresa-red-bull">Empresa Redbull</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Como faço para entrar em contato?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Você pode nos contatar através do formulário de contato em nosso site ou por nossas redes sociais.
+                </div>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Onde a RedBull fica localizada?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                  No mundo inteiro, temos sedes em diversos paises, mas nossa principal sede fica em Fuschl, Áustria.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>AI CALICA</footer>
 </body>
 </html>
