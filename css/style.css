@@ -1,17 +1,126 @@
+/* - - - - - - - - - - - - - - - - - - -  U N I V E R S A L - - - - - - - - - - - - - - - - - - - */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background:	#CCCCCC;
+    --color-var-20:      #00174C;
+    --color-var-30:      #8465b6;
+    --color-var-40:      #382741;
+    --color-fnt-10:      #eeeeee;
+    --color-fnt-20:      #000000;
+    --color-fnt-30:      #FF004C;
+}
+
+body{
+    background-color: var(--color-background);
+    height: 100%;
+    width: 100%;
+    color:var(--color-fnt-20);
+}
+
+header{
+    background-color: var(--color-var-20);
+}
+
+footer{
+    background-color: var(--color-var-20);
+    width: 100%;
+    height: 150px;
+}
+
+/* - - - - - - - - - - - - - - - - - - -  E F E I T O S    V I S U A I S  - - - - - - - - - - - - - - - - - - - */
+
+.parallax-primary {
+
+    background-image: url(./assents/img/RedbullNight.jpg);
+  
+    width: 100%;
+    min-height: 50px;
+    height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.top-bg-video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.top-bg-video video{
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+}
+
+.top-bg-video h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white; /* ajuste a cor do texto conforme necessário */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 76px;
+    font-weight: 700;
+  
+}
+
+.top-bg-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* cor preta com 50% de transparência */
+  }
+
+.parallax-second {
+
+    background-image: url(./assents/img/RedbullAircraft.jpg);
+  
+    width: 100%;
+    min-height: 50px;
+    height: 25vh;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  
+
+/* - - - - - - - - - - - - - - - - - - -  B A R R A  DE  N A V E G A Ç Ã O  - - - - - - - - - - - - - - - - - - - */
+
+
+.navbar-expand-lg.bg-body-tertiary.bg-dark {
+    background-color: transparent !important;
+    color: var(--color-fnt-10);
+}
 
 .navbar-nav .nav-link {
-    color: white !important;
-}
-.dropdown-toggle::after{
-    display: none !important;
+    font-weight: 600;
+    color: var(--color-fnt-10);
+    font-size: 20px;
+    margin-right: 10px;
 }
 
-/* .navbar-expand-lg.bg-body-tertiary.bg-dark {
-    background-color: transparent !important;
-} */
+.navbar-nav .nav-link:hover{
+    color: white;
+    transform: scale(1.2);
+}
 
 .navbar-brand{
-    color: white ;
+    color: var(--color-fnt-10);
     font-size: 35px !important;
 }
 .navbar-nav {
@@ -19,4 +128,150 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly ;
+}
+
+
+.nav-logo{
+    padding-left: 30px;
+}
+
+/* - - - - - - - - - - - - - - - - - - -  H O M E  - - - - - - - - - - - - - - - - - - - */
+
+
+/* Home - Parte 1 */
+
+.home-txt-primary{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.hm-item-txt-1{
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    font-weight: 490;
+    font-size: 18px;
+}
+
+#text-hm{
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* animação linha inicio */
+
+#text-hm::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px; 
+    background-color: var(--color-fnt-30);
+    transition: width 0.3s ease; 
+}
+
+#text-hm:hover::before {
+    width: 100%; 
+  }
+
+/* animação linha fim */
+
+.img-fluid{
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+}
+
+/* Home - Parte 2 */
+
+
+.home-txt-second{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+#hm-s-text{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.bi.bi-quote{
+    font-size: 60px;
+    color: var(--color-fnt-30);
+}
+
+#hm-s-text-title{
+    font-size: 60px;
+}
+
+
+.hm-s-item-txt-1{
+    font-size: 18px;
+}
+
+.home-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.card-title{
+    color: var(--color-fnt-30);
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.card-subtitle.mb-2.text-body-secondary{
+    font-size: 20px;
+    font-weight: bold;
+    color:black !important;
+}
+
+/* Home - Parte 3 */
+
+.home-txt-trird{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hm-text-trird-item{
+    padding-top: 50px;
+}
+
+.img-fluid-2{
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+}
+.btn.btn-link{
+    color:var(--color-fnt-30);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-body{
+    font-weight: bold;
+}
+
+.container.mt-5{
+    padding-bottom: 50px;
 }
