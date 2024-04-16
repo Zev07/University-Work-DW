@@ -19,35 +19,97 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
-            <div class="container-fluid">
-              <img src="/imagens/red-bull.WEBP" alt="Logotipo da Red Bull" height="80">
-              
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"> Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"> Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Produtos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Novidedades</a>
-                  </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"> Contato</a>
-                    </li>
-                  </li>
-                </ul>   
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
+        <div class="container-fluid">
+          <img class="nav-logo"src="./css/assents/img/logo.png" alt="Logotipo da Red Bull" height="80">
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./home.html"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre.html"> Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produtos.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./novidades.html">Novidedades</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contato.html"> Contato</a>
+                </li>
+              </li>
+            </ul>   
+          </div>
+        </div>
+      </nav>    
+</header>
+    <main>
+      <div class="parallax-second"></div>
+      <h1 id="contato-title">Venha Voar Conosco!</h1>
+      <div class="contato-container">
+        <div class="contato-item1">
+          <img src="./css/assents/img/RedbullMan.jpg" class="img-fluid-3">
+        </div>
+        
+      <div class="contato-container2">
+        <div class="contato-item2">
+          <h1>Venha vivenciar cada aventura conosco!</h1>
+          <h4>Nossas Redes:</h4>
+          <div class="contato-buttons">
+            <a class="btn btn-primary" style="background-color: #2214e9;" href="https://www.facebook.com/RedBull/" role="button" ><i id="icon" class="bi bi-facebook"></i></i>Facebook</a>
+            <a class="btn btn-primary" style="background-color: #ee660c;" href="https://www.instagram.com/redbull/" role="button" ><i id="icon" class="bi bi-instagram"></i></i>Instagram</a>
+            <a class="btn btn-primary" style="background-color: #000000;" href="https://twitter.com/RedBullBR" role="button" ><i id="icon" class="bi bi-twitter-x"></i></i>X</a>
+            <a class="btn btn-primary" style="background-color: #ff0095;" href="https://www.instagram.com/zev.vk/" role="button" ><i id="icon" class="bi bi-tiktok"></i></i>TikTok</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="parallax-third"></div>
+      
+      <div class="parallax-thrid"></div>
+      <div class="contato-buttons-fm">
+          <h1>E-mail</h1>
+          <p>Quer ter um contato mais direto?</p>
+          <form action="https://formsubmit.co/zev.viktor7@gmail.com" method="POST" style="width: 26rem;">
+  
+              <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="text" id="nome" class="form-control" name="nome" required />
+                  <label class="form-label" for="nome">Nome</label>
               </div>
-            </div>
-          </nav>    
-    </header>
-    <main></main>
+  
+              <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="email" id="email" class="form-control" name="email" required />
+                  <label class="form-label" for="email">Email</label>
+              </div>
+  
+              <div data-mdb-input-init class="form-outline mb-4">
+                  <textarea class="form-control" id="mensagem" rows="4" name="mensagem" required></textarea>
+                  <label class="form-label" for="mensagem">Mensagem</label>
+              </div>
+  
+              <div class="form-check d-flex justify-content-center mb-4">
+                  <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  value=""
+                  id="form4Example4"
+                  name="copia"
+                  checked
+                  />
+                  <label class="form-check-label" for="form4Example4">
+                  Enviar uma cópia da mensagem para mim
+                  </label>
+              </div>
+  
+              <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+          </form>
+      </div>
+    </main>
     <footer></footer>
 </body>
 </html>
