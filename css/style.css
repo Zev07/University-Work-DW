@@ -48,6 +48,67 @@ footer{
     background-size: cover; 
 }
 
+.parallax-second {
+
+    background-image: url(./assents/img/RedbullAir3.jpg);
+  
+    width: 100%;
+    min-height: 50px;
+    height: 50vh;
+    z-index: -999;
+   
+    filter: brightness(90%);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax-third {
+
+    background-image: url(./assents/img/RedbullAir.jpg);
+  
+    width: 100%;
+    min-height: 50px;
+    height: 20vh;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax-fourth {
+
+    background-image: url(./assents/img/RedbullPano.jpg);
+  
+    width: 100%;
+    min-height: 50px;
+    height: 50vh;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    z-index: -999;
+}
+
+.parallax-fifth {
+
+    background-image: url(./assents/img/RedbulllLight.jpg);
+  
+    width: 100%;
+    min-height: 50px;
+    height: 20vh;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
 .top-bg-video{
     width: 100%;
     height: 100%;
@@ -82,23 +143,7 @@ footer{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* cor preta com 50% de transparência */
-  }
-
-.parallax-second {
-
-    background-image: url(./assents/img/RedbullAircraft.jpg);
-  
-    width: 100%;
-    min-height: 50px;
-    height: 25vh;
-   
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-  }
-  
-
+}
 /* - - - - - - - - - - - - - - - - - - -  B A R R A  DE  N A V E G A Ç Ã O  - - - - - - - - - - - - - - - - - - - */
 
 
@@ -166,19 +211,15 @@ footer{
 
 /* animação linha inicio */
 
-#text-hm::before{
+#text-hm::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
-    height: 4px; 
+    width: 100%; /* Define a largura inicial como 100% */
+    height: 4px;
     background-color: var(--color-fnt-30);
-    transition: width 0.3s ease; 
-}
-
-#text-hm:hover::before {
-    width: 100%; 
+    transition: none; /* Remova a transição para que a linha seja estática */
   }
 
 /* animação linha fim */
@@ -252,6 +293,7 @@ footer{
 
 .hm-text-trird-item{
     padding-top: 50px;
+    width: 800px;
 }
 
 .img-fluid-2{
@@ -268,10 +310,222 @@ footer{
     font-weight: bold;
 }
 
+.btn.btn-link:hover{
+    color:var(--color-var-20);
+}
 .card-body{
     font-weight: bold;
 }
 
 .container.mt-5{
     padding-bottom: 50px;
+}
+
+#faq-title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+#faq-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%; 
+    height: 4px;
+    background-color: var(--color-fnt-30);
+    transition: none; 
+}
+
+#hm-s-text{
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+#hm-s-text::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%; 
+    height: 4px;
+    background-color: var(--color-fnt-30);
+    transition: none; 
+}
+
+/* - - - - - - - - - - - - - - - - - - -  S O B R E - - - - - - - - - - - - - - - - - - - */
+
+
+.sobre-container{
+    margin:50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding: 20px;
+}
+
+.sb-item-1{
+    text-align: center;
+    width: 800px;
+    margin-right: 20px;
+
+}
+
+#sb-title{
+    position: relative;
+    display: inline-block;
+}
+
+#sb-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%; 
+    height: 4px;
+    background-color: var(--color-fnt-30);
+    transition: none; 
+}
+
+.sobre-container-second{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.img-fluid-4{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.sb-item-4{
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 800px;
+}
+
+#sb-title-2{
+    position: relative;
+    display: inline-block;
+}
+
+#sb-title-2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%; 
+    height: 4px;
+    background-color: var(--color-fnt-30);
+    transition: none; 
+}
+
+#sb-title-3{
+    color: var(--color-fnt-10);
+    font-size: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    bottom: 60%;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* - - - - - - - - - - - - - - - - - - -  P R O D U T O S  - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - -  N O V I D A D E S  - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - -  C O N T A T O  - - - - - - - - - - - - - - - - - - - */
+
+
+/* contato - parte 1 */
+
+
+
+#contato-title{
+    color: var(--color-fnt-10);
+    font-size: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    bottom: 60%;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.contato-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.img-fluid-3{
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+}
+
+/* contato - parte 2 */
+
+.contato-container2{
+    margin-top: -140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.contato-item2{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* contato - redes */
+
+.btn.btn-primary{
+    margin: 15px;
+    padding-right: 50px;
+    width: 100px;
+    height: 105px;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn.btn-primary:hover{
+    transform: scale(1.1);
+  }
+  
+#icon{
+    font-size: xx-large;
+    padding: 20px;
+}
+.contato-buttons-fm{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
