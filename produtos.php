@@ -12,7 +12,7 @@
         echo "falha ao conectar:(" . $mysqli->connect_errno . ")" . $mysqli->connect_errno;
     }
     else
-    echo "Conectado ao Banco de Dados  ";
+    echo "";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -77,9 +77,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem1 = "css/assents/img/R-T.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem1' class='product-item-sb-1'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
@@ -100,9 +100,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem2 = "css/assents/img/R-S.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem2' class='product-item-sb-2'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
@@ -123,9 +123,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem3 = "css/assents/img/R-A.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem3' class='product-item-sb-3'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
@@ -146,9 +146,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem4 = "css/assents/img/R-C.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem4' class='product-item-sb-4'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
@@ -169,9 +169,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem5 = "css/assents/img/R-M.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem5' class='product-item-sb-5'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
@@ -192,9 +192,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem6 = "css/assents/img/R-P.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem6' class='product-item-sb-6'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
@@ -205,9 +205,11 @@
       ?>
       </div>
       <div class="product-item7">
+     
       <?php
       // Consulta SQL para selecionar o ID do produto desejado
-      $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Summer Edition'";
+      
+      $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Tropical Edition'";
       $result = $conn->query($sql);
 
       // Verificar se encontrou o produto
@@ -215,9 +217,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem1 = "css/assents/img/R-TR.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem1'class='product-item-sb-7'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
@@ -238,9 +240,9 @@
       // Exibir os detalhes do produto
       $row = $result->fetch_assoc();
 
-      $caminhoimagem1 = "css/assents/img/logo.png";
+      $caminhoimagem8 = "css/assents/img/R-W.png";
       
-      echo "<img src='$caminhoimagem1'>";
+      echo "<img src='$caminhoimagem8' class='product-item-sb-8'>";
       echo "<h4>" . $row["nome"] . "</h4>";
       echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
       echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
