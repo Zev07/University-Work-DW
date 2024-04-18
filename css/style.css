@@ -169,7 +169,7 @@ footer{
     font-size: 35px !important;
 }
 .navbar-nav {
-    margin: 0 65vh;
+    margin-left: 35%;
     display: flex;
     align-items: center;
     justify-content: space-evenly ;
@@ -444,6 +444,56 @@ footer{
 
 /* - - - - - - - - - - - - - - - - - - -  P R O D U T O S  - - - - - - - - - - - - - - - - - - - */
 
+.product-container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    gap:20px;
+}
+
+/* .product-item1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-item2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-item3{
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-item4{
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-item5{
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-item6{
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-item7{
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-item8{
+    text-align: center;
+    font-size: 20px;
+} */
+
 /* - - - - - - - - - - - - - - - - - - -  N O V I D A D E S  - - - - - - - - - - - - - - - - - - - */
 
 
@@ -580,4 +630,8 @@ footer{
     .hm-item-txt-2 {
         width: 750px;
         }
+
+    .hm-text-trird-item{
+        width: 768px;
+    }
     }
