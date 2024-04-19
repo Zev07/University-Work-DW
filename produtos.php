@@ -1,4 +1,19 @@
 
+<?php 
+  $hostname = "localhost";
+  $bancodedados = "empresa_redbull";
+  $usuario = "root";
+  $senha = "";
+  
+  $conn = new mysqli($hostname , $usuario,  $senha, $bancodedados);
+
+  $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
+    if ($mysqli->connect_errno) {
+        echo "falha ao conectar:(" . $mysqli->connect_errno . ")" . $mysqli->connect_errno;
+    }
+    else
+    echo "";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -63,6 +78,40 @@
           </nav>    
     </header>
     <main>
+     <div class="parallax-sixth"></div>
+     <div class="product-bg">
+      <div class="product-text">
+        <h1>ASAS ASAS SASASSASAS</h1>
+        <p> COCAINA É MELHOR</p>
+      </div>
+       <video autoplay muted loop>
+        <source src="./css/assents/videos/Product-Bg.mp4" type="video/mp4">
+        </video>
+       </div>
+    <div class="product-container">
+      <div class="product-item1">
+      <?php
+      // Consulta SQL para selecionar o ID do produto desejado
+      $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull Tradicional'";
+      $result = $conn->query($sql);
+
+      // Verificar se encontrou o produto
+      if ($result->num_rows > 0) {
+      // Exibir os detalhes do produto
+      $row = $result->fetch_assoc();
+
+      $caminhoimagem1="css/assents/img/R-T.png";
+      
+      echo "<img src='$caminhoimagem1' class='product-item-sb-1'>";
+      echo "<h4>" . $row["nome"] . "</h4>";
+      echo "<p>Valor: R$ " . number_format($row["valor"], 2, ',', '.') . "</p>";
+      echo "<p>Disponibilidade: " . ($row["qtdestoque"] > 0 ? "Disponível" : "Indisponível") . "</p>";
+      echo "<p>ID do Produto: " . $row["id_prod"] . "</p>";
+      } else {
+      echo "Produto não encontrado.";
+      }
+      ?>
+    </div>
     </main>
     <footer></footer>
 </body>
