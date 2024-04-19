@@ -1,9 +1,8 @@
-
 <?php 
   $hostname = "localhost";
   $bancodedados = "empresa_redbull";
   $usuario = "root";
-  $senha = "";
+  $senha = "Dw-4-PJ-27!";
   
   $conn = new mysqli($hostname , $usuario,  $senha, $bancodedados);
 
@@ -14,6 +13,7 @@
     else
     echo "";
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -36,48 +36,74 @@
 </head>
 <body>
 <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
-            <div class="container-fluid">
-              <img class="nav-logo"src="./css/assents/img/logo.png" alt="Logotipo da Red Bull" height="80">
-              <button class="navbar-toggler" type="button"  aria-controls="navbarNav" aria-expanded="false"                   data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"  >
-                <span class="navbar-toggler-icon"></span>
-                </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-                                 labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <ul>
-                    <li><a class="nav-link-lat" href="./home.html" >Home</a></li>
-                    <li><a class="nav-link-lat" href="./sobre.html" >Sobre</a></li>
-                    <li><a class="nav-link-lat" href="./produtos.php">Produtos </a></li>
-                    <li><a class="nav-link-lat" href="./novidades.php"> Novidades</a></li>
-                    <li><a class="nav-link-lat" href="./contato.html"> Contato</a></li>
-                  </ul>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">         n                   </button>
-                </div>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./home.html"> Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./sobre.html"> Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./produtos.php">Produtos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./novidades.php">Novidedades</a>
-                  </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contato.html"> Contato</a>
-                    </li>
-                  </li>
-                </ul>   
-              </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
+        <div class="container-fluid">
+          <img class="nav-logo"src="./css/assents/img/logo.png" alt="Logotipo da Red Bull" height="80">
+          <button class="navbar-toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <ul>
+                <li><a class="nav-link-lat" href="./home.html" >Home</a></li>
+                <li><a class="nav-link-lat" href="./sobre.html" >Sobre</a></li>
+                <li><a class="nav-link-lat" href="./produtos.php">Produtos </a></li>
+                <li><a class="nav-link-lat" href="./novidades.php"> Novidades</a></li>
+                <li><a class="nav-link-lat" href="./contato.html"> Contato</a></li>
+              </ul>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>    
-    </header>
-    <main>
-    </main>
-    <footer></footer>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./home.html"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre.html"> Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produtos.php">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./novidades.php">Novidades</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contato.html"> Contato</a>
+                </li>
+              </li>
+            </ul>   
+          </div>
+        </div>
+      </nav>    
+</header>
+<main>
+    <div class="parallax-seventh"></div>
+    <h1 id="sb-title-7">Trazendo um sabor novo a cada estação!</h1>
+      <div class="product-container-nov">
+       <div class="product-DB">
+       <?php
+      
+       $sql = "SELECT id_nov, resumo, descricao FROM novidades WHERE resumo = 'RedBull Winter Edition'";
+        $result = $conn->query($sql);
+
+      
+        if ($result->num_rows > 0) {
+      
+       $row = $result->fetch_assoc();
+
+        $caminhoimagem9 = "css/assents/img/RNW.jpeg";  
+       echo "<img src='$caminhoimagem9' class='product-item-nv'>";
+        echo "<h1 class='product-tt'>" . $row["resumo"] . "</h1>";
+       echo "<h3> Para este inverno </h3>";
+       echo"<h6>". $row["descricao"] . "</h6>";
+        } else {
+        echo "Produto não encontrado.";
+       }
+       ?>
+      </div>
+    </div>
+</main>
+<footer></footer>
+    
 </body>
 </html>
