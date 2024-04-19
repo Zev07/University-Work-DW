@@ -1,19 +1,4 @@
 
-<?php 
-  $hostname = "localhost";
-  $bancodedados = "empresa_redbull";
-  $usuario = "root";
-  $senha = "";
-  
-  $conn = new mysqli($hostname , $usuario,  $senha, $bancodedados);
-
-  $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
-    if ($mysqli->connect_errno) {
-        echo "falha ao conectar:(" . $mysqli->connect_errno . ")" . $mysqli->connect_errno;
-    }
-    else
-    echo "";
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
