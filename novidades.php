@@ -2,7 +2,7 @@
   $hostname = "localhost";
   $bancodedados = "empresa_redbull";
   $usuario = "root";
-  $senha = "Dw-4-PJ-27!";
+  $senha = "root";
   
   $conn = new mysqli($hostname , $usuario,  $senha, $bancodedados);
 
