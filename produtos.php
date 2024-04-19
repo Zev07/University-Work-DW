@@ -1,9 +1,9 @@
 
 <?php 
   $hostname = "localhost";
-  $bancodedados = "redbull";
+  $bancodedados = "empresa_redbull";
   $usuario = "root";
-  $senha = "";
+  $senha = "Dw-4-PJ-27!";
   
   $conn = new mysqli($hostname , $usuario,  $senha, $bancodedados);
 
@@ -36,15 +36,28 @@
     <title>Document</title>
 </head>
 <body>
-  <header>
+<header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
         <div class="container-fluid">
           <img class="nav-logo"src="./css/assents/img/logo.png" alt="Logotipo da Red Bull" height="80">
-          
+          <button class="navbar-toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <ul>
+                <li><a class="nav-link-lat" href="./home.html" >Home</a></li>
+                <li><a class="nav-link-lat" href="./sobre.html" >Sobre</a></li>
+                <li><a class="nav-link-lat" href="./produtos.php">Produtos </a></li>
+                <li><a class="nav-link-lat" href="./novidades.php"> Novidades</a></li>
+                <li><a class="nav-link-lat" href="./contato.html"> Contato</a></li>
+              </ul>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./home.html"> Home</a>
+                <a class="nav-link" href="./home.html"> Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./sobre.html"> Sobre</a>
@@ -53,7 +66,7 @@
                 <a class="nav-link" href="./produtos.php">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./novidades.php">Novidedades</a>
+                <a class="nav-link" href="./novidades.php">Novidades</a>
               </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./contato.html"> Contato</a>
@@ -65,16 +78,26 @@
       </nav>    
 </header>
     <main>
+    <div class="parallax-sixth"></div>
+    <h1 id="sb-title-6">Sabores para todos paladares!</h1>
+    <div class="product-bg">
+     <video autoplay muted loop>
+        <source src="./css/assents/videos/Product-Bg.mp4" type="video/mp4">
+      </video>
+      <div class="product-text">
+        <h1 id="product-tt">Dar asas a pessoas e ideias</h1>
+        <p>Inspirado pelas bebidas funcionais do Extremo Oriente, Dietrich Mateschitz fundou a Red Bull em meados dos anos 80. Ele desenvolveu não apenas um novo produto, mas também um conceito de marketing único e lançou Red Bull Energy Drink na Áustria em 1º de abril de 1987. Nascia, assim, uma categoria de produto completamente nova a das bebidas energéticas.</p>
+      </div>
+  </div>
     <div class="product-container">
       <div class="product-item1">
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+      
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull Tradicional'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+
       $row = $result->fetch_assoc();
 
       $caminhoimagem1 = "css/assents/img/R-T.png";
@@ -89,15 +112,16 @@
       }
       ?>
       </div>
+
       <div class="product-item2">
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+      
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull Sugar Free'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
+      
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+  
       $row = $result->fetch_assoc();
 
       $caminhoimagem2 = "css/assents/img/R-S.png";
@@ -112,15 +136,16 @@
       }
       ?>
       </div>
+
       <div class="product-item3">
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+      
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Açai Edition'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
+      
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+      
       $row = $result->fetch_assoc();
 
       $caminhoimagem3 = "css/assents/img/R-A.png";
@@ -137,13 +162,13 @@
       </div>
       <div class="product-item4">
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+      
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Açai & Coco Edition'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
+     
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+      
       $row = $result->fetch_assoc();
 
       $caminhoimagem4 = "css/assents/img/R-C.png";
@@ -158,15 +183,15 @@
       }
       ?>
       </div>
+
       <div class="product-item5">
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Melancia Edition'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+
       $row = $result->fetch_assoc();
 
       $caminhoimagem5 = "css/assents/img/R-M.png";
@@ -181,15 +206,16 @@
       }
       ?>
       </div>
+
       <div class="product-item6">
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Pitaya Edition'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
+
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+
       $row = $result->fetch_assoc();
 
       $caminhoimagem6 = "css/assents/img/R-P.png";
@@ -204,17 +230,17 @@
       }
       ?>
       </div>
+
       <div class="product-item7">
      
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+
       
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Tropical Edition'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+
       $row = $result->fetch_assoc();
 
       $caminhoimagem1 = "css/assents/img/R-TR.png";
@@ -229,15 +255,16 @@
       }
       ?>
       </div>
+
       <div class="product-item8">
       <?php
-      // Consulta SQL para selecionar o ID do produto desejado
+
       $sql = "SELECT id_prod, nome, valor, qtdestoque FROM produtos WHERE nome = 'RedBull - The Winter Edition'";
       $result = $conn->query($sql);
 
-      // Verificar se encontrou o produto
+
       if ($result->num_rows > 0) {
-      // Exibir os detalhes do produto
+
       $row = $result->fetch_assoc();
 
       $caminhoimagem8 = "css/assents/img/R-W.png";
