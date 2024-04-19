@@ -897,3 +897,38 @@ footer{
 }
 
 }
+
+
+/*--------------------Navegaçao responsiva------------------------------*/
+
+.offcanvas-end {
+    width: 250px !important;
+    background-color:#00174C !important;
+}
+.navbar-toggler{
+    background-color: #FF004C;
+}
+
+.offcanvas-header .btn-close{
+    background-color: rgba(255, 0, 0, 0.641);
+    margin-top: -25vh !important;
+}
+.navbar-expand-lg .nav-link {
+    color: white;
+}
+ul{
+    list-style-type: none;
+    font-size: 20px ; 
+    padding: 3vh;
+    margin-left: 6vh;
+
+    .nav-link-lat{
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-link-lat:hover{
+        color: yellow;
+        transform: scale(1);
+    }
+}
