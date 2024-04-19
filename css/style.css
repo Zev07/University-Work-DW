@@ -7,7 +7,7 @@
 }
 
 :root {
-    --color-background:	#CCCCCC;
+    --color-background:	#ffffff;
     --color-var-20:      #00174C;
     --color-var-30:      #8465b6;
     --color-var-40:      #382741;
@@ -31,6 +31,11 @@ footer{
     background-color: var(--color-var-20);
     width: 100%;
     height: 150px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* - - - - - - - - - - - - - - - - - - -  E F E I T O S    V I S U A I S  - - - - - - - - - - - - - - - - - - - */
@@ -109,6 +114,36 @@ footer{
     background-size:cover;
 }
 
+.parallax-sixth {
+
+    background-image: url(./assents/img/RedbulllPD.jpg);
+  
+    width: 100%;
+    min-height: 50px;
+    height: 50vh;
+   
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter: brightness(0.8);
+}
+
+.parallax-seventh{
+
+    background-image: url(./assents/img/RedbullWinter.jpg);
+
+    width: 100%;
+    min-height: 50px;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: brightness(0.8);
+}
+
+
 .top-bg-video{
     width: 100%;
     height: 100%;
@@ -180,6 +215,42 @@ footer{
     padding-left: 30px;
 }
 
+/*--------------------Navegaçao responsiva------------------------------*/
+
+.offcanvas-end {
+    width: 250px !important;
+    background-color:#00174C !important;
+}
+.navbar-toggler{
+    background-color: #FF004C;
+}
+
+.offcanvas-header .btn-close{
+    background-color: rgba(255, 0, 0, 0.641);
+    margin-top: -25vh !important;
+}
+.navbar-expand-lg .nav-link {
+    color: white;
+}
+
+.nav-link-lat{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link-lat:hover{
+    color: yellow;
+    transform: scale(1);
+}
+
+
+ul{
+    list-style-type: none;
+    font-size: 20px ; 
+    padding: 3vh;
+    margin-left: 6vh;
+}
+
 /* - - - - - - - - - - - - - - - - - - -  H O M E  - - - - - - - - - - - - - - - - - - - */
 
 
@@ -209,7 +280,7 @@ footer{
     font-size: 20px;
 }
 
-/* animação linha inicio */
+
 
 #text-hm::before {
     content: "";
@@ -220,9 +291,8 @@ footer{
     height: 4px;
     background-color: var(--color-fnt-30);
     transition: none; /* Remova a transição para que a linha seja estática */
-  }
+}
 
-/* animação linha fim */
 
 .img-fluid{
     border-radius: 10px;
@@ -417,6 +487,7 @@ footer{
 #sb-title-2{
     position: relative;
     display: inline-block;
+    font-weight: bold;
 }
 
 #sb-title-2::before {
@@ -440,9 +511,23 @@ footer{
     bottom: 60%;
     left: 50%; 
     transform: translateX(-50%); 
+    font-weight: bold;
 }
 
 /* - - - - - - - - - - - - - - - - - - -  P R O D U T O S  - - - - - - - - - - - - - - - - - - - */
+
+#sb-title-6{
+    color: var(--color-fnt-10);
+    font-size: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    bottom: 60%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-weight: bold;
+}
 
 .product-container{
     text-align: center;
@@ -543,8 +628,111 @@ footer{
     transform: scale(1.05);
 }
 
+.product-bg{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:  center;
+    margin:50px;
+}
+
+.product-text{
+    margin: 130px;
+    text-align: center;
+}
+
+.product-bg video{
+    width: 800px;
+    height: 500px;
+    padding:10px;
+}
+
+
+#product-tt{
+    position: relative;
+    display: inline-block;
+}
+
+
+#product-tt::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-fnt-30);
+    transition: none;
+  }
+
+
 
 /* - - - - - - - - - - - - - - - - - - -  N O V I D A D E S  - - - - - - - - - - - - - - - - - - - */
+
+
+#sb-title-7{
+    color: var(--color-fnt-10);
+    font-size: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    bottom: 60%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-weight: bold;
+}
+
+
+.product-container-nov {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 100vh; 
+    text-align: center;
+}
+
+.product-DB {
+    max-width: 500px;
+    height: 900px;
+    
+}
+
+
+.product-item-nv {
+    border-radius: 10px;
+    margin-left: -145px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 800px;
+    height: 500px;
+}
+
+
+.product-tt{
+    position: relative;
+    display: inline-block;
+}
+
+
+.product-tt::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 4px;
+    background-color: var(--color-fnt-30);
+    transition: none; 
+}
+
+
+.product-item-nv:hover {
+    transform: scale(1.20);
+}
 
 
 /* - - - - - - - - - - - - - - - - - - -  C O N T A T O  - - - - - - - - - - - - - - - - - - - */
@@ -556,6 +744,7 @@ footer{
 
 #contato-title{
     color: var(--color-fnt-10);
+    font-weight: bold;
     font-size: 60px;
     position: absolute;
     width: 100%;
@@ -688,6 +877,7 @@ footer{
     .hm-text-trird-item{
         width: 768px;
      }
+
     /*- - - - - - - - - - Responsividade Tablet (Página Sobre) - - - - - - - - - - */
     .sobre-container {
         margin: 50px;
@@ -734,74 +924,29 @@ footer{
       text-align: center;
       width: 700px;
     }
+
+        /*Pagina de contato*/ 
+
+   .contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 100px;
+     }
+  .contato-container2 {
+      margin-top: -0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
     }
 
+
     
-    /*- - - - - - - - - - Responsividade Laptop - - - - - - - - - - */
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-    
-    /*Página home*/
-    .top-bg-video h1 {
-        position: absolute;
-        top: 50%;
-        left: 37%;
-        width: 100%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-transform: uppercase;
-        font-size: 80px;
-        font-weight: 700;
-        margin-left: 125px;
-    }
-    .home-txt-primary {
-        width: 768px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        margin-left: 130px;
-    }
-   /*Página sobre*/
-   
-   .sobre-container {
-       margin: 50px;
-       display: flex;
-       flex-direction: collum;
-       align-items: center;
-       padding: 20px;
-       width: 700px;
-       margin-left: 170px;
-    
-    }
-   .img-fluid-3 {
-       border-radius: 10px;
-       display: block;
-       margin: 0 auto;
-       width: 700px;
-       height: 500px;
-      margin-right: 15px;
-    }
-    .sobre-container-second {
-        margin-left: 50px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 700px;
-        margin-left: 185px;
-    }
-    .img-fluid-4 {
-        width: 700px;
-        height: 500px;
-        border-radius: 10px;
-        display: block;
-        margin: 0 auto;
-        margin-right: 20px;
-    }
-}
+
 /*- - - - - - - - - - Responsividade Mobile-S (Página Home) - - - - - - - - - - */
 
 @media only screen and (min-width:375px) and (max-width: 553px) {
@@ -960,39 +1105,4 @@ footer{
     margin-left: 10px;
 }
 
-}
-
-
-/*--------------------Navegaçao responsiva------------------------------*/
-
-.offcanvas-end {
-    width: 250px !important;
-    background-color:#00174C !important;
-}
-.navbar-toggler{
-    background-color: #FF004C;
-}
-
-.offcanvas-header .btn-close{
-    background-color: rgba(255, 0, 0, 0.641);
-    margin-top: -25vh !important;
-}
-.navbar-expand-lg .nav-link {
-    color: white;
-}
-ul{
-    list-style-type: none;
-    font-size: 20px ; 
-    padding: 3vh;
-    margin-left: 6vh;
-
-    .nav-link-lat{
-        text-decoration: none;
-        color: white;
-    }
-
-    .nav-link-lat:hover{
-        color: yellow;
-        transform: scale(1);
-    }
 }
