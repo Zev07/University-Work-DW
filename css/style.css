@@ -833,14 +833,9 @@ ul{
 
 
 /* - - - - - - - - - - - - - - - - - - -  R E S P O N S I V I D A D E  - - - - - - - - - - - - - - - - - - - */
-
-
 /*Responsividade para Tablet */
-
-
 /*home*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
 /*- - - - - - - - - - Responsividade Tablet (Página Home) - - - - - - - - - - */
     .top-bg-video video {
         width: 100%;
@@ -885,11 +880,9 @@ ul{
     .hm-item-txt-2 {
         width: 750px;
         }
-
     .hm-text-trird-item{
         width: 768px;
      }
-
     /*- - - - - - - - - - Responsividade Tablet (Página Sobre) - - - - - - - - - - */
     .sobre-container {
         margin: 50px;
@@ -899,7 +892,6 @@ ul{
         padding: 20px;
         width: 700px;
     }
-
     .sb-item-1 {
       text-align: center;
       width: 700px;
@@ -936,9 +928,7 @@ ul{
       text-align: center;
       width: 700px;
     }
-
         /*Pagina de contato*/ 
-
    .contato-container {
     display: flex;
     flex-direction: column;
@@ -956,13 +946,37 @@ ul{
      }
     }
 
+    /* Novidades*/
+    .product-item-nv {
+        border-radius: 10px;
+        margin-left: -105px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 700px;
+        height: 450px;
+    }
 
-    
+    /* produtos */
+    .product-bg {
+        width: 50%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 230px;
+    }
+    .product-bg video {
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+    }
+
+
 
 /*- - - - - - - - - - Responsividade Mobile-S (Página Home) - - - - - - - - - - */
 
 @media only screen and (min-width:375px) and (max-width: 553px) {
-
     .hm-text-trird-item{
      padding-top: 50px;
      width: 350px;
@@ -1072,13 +1086,10 @@ ul{
         width: 340px;
         margin-left: -15%;
     }
-
     .sb-item-3{
         width: 375px;
     }
-
 /*- - - - - - - - - - Responsividade Mobile-S (Página Contato) - - - - - - - - - - */
-
 #contato-title {
     color: var(--color-fnt-10);
     font-size: 30px;
@@ -1090,15 +1101,12 @@ ul{
     left: 50%;
     transform: translateX(-50%);
 }
-
 .contato-container2 {
     margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
 .contato-container {
     display: flex;
     flex-direction: column;
@@ -1107,7 +1115,6 @@ ul{
     margin-top: 50px;
     margin-bottom: 100px;
 }
-
 .img-fluid-3 {
     border-radius: 10px;
     display: block;
@@ -1116,5 +1123,108 @@ ul{
     height: auto;
     margin-left: 10px;
 }
+
+}
+
+
+/*- - - - - - - - - - Responsividade Mobile-S (Página Produtos) - - - - - - - - - - */
+
+#sb-title-6 {
+    color: var(--color-fnt-10);
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.product-bg {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-bg video {
+    width: 395px;
+    height: 500px;
+    padding: 10px;
+}
+
+.product-text {
+    margin: 30px;
+    text-align: center;
+}
+
+.product-item-sb-1 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.product-item-sb-2 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.product-item-sb-3 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.product-item-sb-4 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.product-item-sb-5 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.product-item-sb-6 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.product-item-sb-7 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.product-item-sb-8 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
 
 }
