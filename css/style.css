@@ -964,7 +964,6 @@ ul{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-left: 230px;
     }
     .product-bg video {
         width: 500px;
@@ -1127,7 +1126,7 @@ ul{
 }
 
 
-/*- - - - - - - - - - Responsividade Mobile-S (Página Produtos) - - - - - - - - - - */
+/- - - - - - - - - - Responsividade Mobile-S (Página Produtos) - - - - - - - - - -/
 
 #sb-title-6 {
     color: var(--color-fnt-10);
@@ -1143,7 +1142,7 @@ ul{
 }
 
 .product-bg {
-    width: 100%;
+    width: 280px;
     height: 30%;
     display: flex;
     flex-direction: column;
@@ -1152,14 +1151,14 @@ ul{
 }
 
 .product-bg video {
-    width: 395px;
+    width: 300px;
     height: 500px;
-    padding: 10px;
 }
 
 .product-text {
     margin: 30px;
     text-align: center;
+    width: 100%;
 }
 
 .product-item-sb-1 {
@@ -1226,5 +1225,14 @@ ul{
     border-radius: 10px;
 }
 
-
+/- - - - - - - - - - Responsividade Mobile-S (Página novidades) - - - - - - - - - -/
+#sb-title-7 {
+    font-size: 28px;
+    }
+.product-item-nv {
+    margin-left: 0;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    width: 375px;
+    height: 235px;
 }
