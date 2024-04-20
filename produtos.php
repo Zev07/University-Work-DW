@@ -1,9 +1,9 @@
 
 <?php 
   $hostname = "localhost";
-  $bancodedados = "id22064214_root";
-  $usuario = "id22064214_root";
-  $senha = "Dw-4-PJ-27!";
+  $bancodedados = "empresa_redbull";
+  $usuario = "root";
+  $senha = "root";
   
   $conn = new mysqli($hostname , $usuario,  $senha, $bancodedados);
 
