@@ -32,7 +32,7 @@ header{
     color: var(--color-fnt-10)!important;
     background-color: var(--color-var-20) !important;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 
 .text-body{
