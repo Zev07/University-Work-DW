@@ -1123,10 +1123,8 @@ ul{
     margin-left: 10px;
 }
 
-}
 
-
-/- - - - - - - - - - Responsividade Mobile-S (Página Produtos) - - - - - - - - - -/
+/*- - - - - - - - - - Responsividade Mobile-S (Página Produtos) - - - - - - - - - -*/
 
 #sb-title-6 {
     color: var(--color-fnt-10);
@@ -1225,7 +1223,7 @@ ul{
     border-radius: 10px;
 }
 
-/- - - - - - - - - - Responsividade Mobile-S (Página novidades) - - - - - - - - - -/
+/*- - - - - - - - - - Responsividade Mobile-S (Página novidades) - - - - - - - - - -*/
 #sb-title-7 {
     font-size: 28px;
     }
@@ -1236,3 +1234,7 @@ ul{
     width: 375px;
     height: 235px;
 }
+
+
+}
+
